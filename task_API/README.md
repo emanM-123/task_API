@@ -51,9 +51,9 @@ NODE_PORT=4000
 - **Endpoint**: POST http://localhost:4000/api/task/add
 - **Request Body**: JSON object with task details.
 {
-    "task_name":"task demo",
-    "description":"Lorem ipsum......",
-    "due_date": ""
+    "title":"title of the task",
+    "author":"author name",
+    "summary": "task summary"
 }
 
 ### Update a task
@@ -62,9 +62,9 @@ NODE_PORT=4000
 - **Request Body**: JSON object with updated task details.
 {
     "task_id": "6548b21cf97493cc3e1129d6",
-    "task_name":"task demo",
-    "description":"Lorem ipsum updated......",
-    "due_date": ""
+    "title":"title of the task",
+    "author":"author name",
+    "summary": "task summary"
 }
 
 
