@@ -43,9 +43,35 @@ NODE_PORT=4000
 
 ## Usage
 
+## Features
+
+- User Registration:
+  - While registering, the user's password is encrypted using a 'pre' method.
+
+- User Login:
+  - User authentication through login.
+
+- JWT Token Verification:
+  - JWT (JSON Web Token) is used to verify user identity.
 
 ## API Endpoints
 
+- **Endpoint**: POST http://localhost:4000/login
+- **Request Body**: JSON object with task details.
+{
+    "user_name":"eman123",
+    "password":"eman@123",
+}
+- **Endpoint**: POST http://localhost:4000/api/signup
+- **Request Body**: JSON object with task details.
+{
+    "user_name":"eman123",
+    "password":"eman@123",
+    "email":"eman@gmail.com",
+    "mobile":"1313131122",
+    "name":"lkmerlkmglk",
+    "gender":"female"
+}
 ### Add a task
 
 - **Endpoint**: POST http://localhost:4000/api/task/add
@@ -79,6 +105,8 @@ NODE_PORT=4000
 ### List tasks
 
 - **Endpoint**: GET http://localhost:4000/api/task
+
+
 
 ## Usage
 
